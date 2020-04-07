@@ -7,6 +7,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import com.example.dagger2componentdependenciestest.di.AppModule;
 import com.example.dagger2componentdependenciestest.di.DaggerAppComponent;
+import com.example.dagger2componentdependenciestest.di.DaggerTestAppComponent;
 import com.example.dagger2componentdependenciestest.utility.RandomNumberGenerator;
 
 import org.junit.Test;
