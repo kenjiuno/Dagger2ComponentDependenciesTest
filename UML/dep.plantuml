@@ -1,0 +1,26 @@
+@startuml main
+!theme mars
+
+package main {
+    interface AppComponent {
+        + void inject(MainActivity activity)
+        + RandomNumberGenerator newRandomNumberGenerator()
+        
+    }
+
+    class AppModule {
+        + RandomNumberGenerator newRandomNumberGenerator()
+    }
+
+    AppComponent -- AppModule
+}
+
+package androidTest {
+    interface TestAppComponent {
+        + void inject(ExampleInstrumentedTest test)
+    }
+
+    AppComponent --- TestAppComponent
+}
+
+@enduml
